@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2818" systemVersion="12A269" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1900"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView translatesAutoresizingMaskIntoConstraints="NO" contentMode="scaleToFill" id="tDt-SK-Acc">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                            <label translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.50000000000000011" contentMode="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" text="Status" adjustsFontSizeToFit="NO" autoshrinkMode="none" id="fl4-X2-Gtf">
+                                <color key="backgroundColor" red="0.54859594460000005" green="0.83695652170000001" blue="0.33926313340000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="ujN-78-ggh"/>
+                                </constraints>
+                                <nil key="highlightedColor"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tDt-SK-Acc" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="1OY-8P-rzx"/>
+                            <constraint firstAttribute="trailing" secondItem="fl4-X2-Gtf" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="4qR-iS-21G"/>
+                            <constraint firstItem="tDt-SK-Acc" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="8wR-1H-Oe0"/>
+                            <constraint firstItem="tDt-SK-Acc" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="Nmz-tf-xGd"/>
+                            <constraint firstItem="fl4-X2-Gtf" firstAttribute="top" secondItem="3" secondAttribute="top" constant="157" id="gXa-zP-b9n"/>
+                            <constraint firstItem="fl4-X2-Gtf" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="n2Y-AM-U38"/>
+                            <constraint firstItem="tDt-SK-Acc" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="njQ-2g-3wC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="m_statusLabel" destination="fl4-X2-Gtf" id="e8u-3T-JXw"/>
+                        <outlet property="m_webView" destination="tDt-SK-Acc" id="TLd-kq-KgK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-78" y="-12"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

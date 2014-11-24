@@ -1,0 +1,3 @@
+This book is composed by 14 chapters and 2 appendixes, starting from a main project in conjunction with several self-contain tiny projects to construct the while book. 
+If you are a newbie to Android, or want to have a full understanding, we suggest you study from beginning and build the fundation with us, and explore the diversity inside Android. 
+Since this book heavily uses Eclipse and it's feature, so we will spend some pages for the basic features in Eclipse, therefore if you already familiar with Eclipse, you can skip section 2 and directly to the later chapters.
